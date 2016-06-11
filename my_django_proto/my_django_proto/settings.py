@@ -40,6 +40,10 @@ INSTALLED_APPS = [
 
     # my_django_proto application
     'proto_api',
+    'proto_api.events',
+
+    # third_party_application
+    'rest_framework',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -131,3 +135,10 @@ try:
     from .local_settings import *
 except Exception as e:
     pass
+
+# Adding Permission from djangorestframework
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly'
+    ]
+}
