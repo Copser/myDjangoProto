@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'proto_api.events',
 
     # third_party_application
-    'restframework',
+    'rest_framework',
 ]
 
 MIDDLEWARE_CLASSES = [
