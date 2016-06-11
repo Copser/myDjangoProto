@@ -40,6 +40,10 @@ INSTALLED_APPS = [
 
     # my_django_proto application
     'proto_api',
+    'proto_api.events',
+
+    # third_party_application
+    'restframework',
 ]
 
 MIDDLEWARE_CLASSES = [
