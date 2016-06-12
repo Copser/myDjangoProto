@@ -1,4 +1,6 @@
-myDjangoProto is a small prototype project for future django project.
+myDjangoProto is a small prototype project for future django projects. The idea is to skip set up
+Django environment, just `git clone https://github.com/Copser/myDjangoProto.git`, install `requirements.txt`,
+and work on it.
 
 Packages:
 
@@ -7,4 +9,5 @@ Packages:
 3. coverage==4.1
 4. psycopg2==2.6.1
 
-myDjangoProto uses Postgresql as default database, basic API provided, and `contact` application is provided. This application need's to be tested.
+myDjangoProto uses Postgresql as default database, basic API provided.
+Contact app is provided, it need's to be tested.
