@@ -7,6 +7,16 @@ from django.contrib import messages
 # Create your views here.
 
 
+def index(request):
+    """TODO: Docstring for index.
+    :returns: TODO
+
+    """
+    t = loader.get_template('index.html')
+    c = RequestContext(request)
+    return HttpResponse(t.render(c))
+
+
 def contact(request):
     """TODO: Docstring for contact.
     :returns: TODO
